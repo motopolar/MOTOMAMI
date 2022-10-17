@@ -1,4 +1,4 @@
-process.env['NODE_TLS_REJECT_UNAUTHORIZED'] = '0'; //SI QUIERES TEXTO SIMPLIFICADO EN LA CONSOLA USA ESTE CÓDIGO 
+/*process.env['NODE_TLS_REJECT_UNAUTHORIZED'] = '0'; //SI QUIERES TEXTO SIMPLIFICADO EN LA CONSOLA USA ESTE CÓDIGO 
 import './config.js';
 import { createRequire } from "module"; 
 import path, { join } from 'path'
@@ -94,27 +94,6 @@ const stats = statSync(file)
 if (stats.isFile() && (Date.now() - stats.mtimeMs >= 1000 * 60 * 3)) return unlinkSync(file) // 3 minutes
 return false
 })}
-
-/*if (!opts['test']) {
-if (global.db) setInterval(async () => {
-if (global.db.data) await global.db.write()
-if (opts['autocleartmp'] && (global.support || {}).find) (tmp = [os.tmpdir(), 'tmp', "GataJadiBot"], tmp.forEach(filename => cp.spawn('find', [filename, '-amin', '3', '-type', 'f', '-delete'])))
-}, 30 * 1000)}
-
-if (opts['server']) (await import('./server.js')).default(global.conn, PORT)
-
-function clearTmp() {
-const tmp = [tmpdir(), join(__dirname, './tmp')]
-const filename = []
-tmp.forEach(dirname => readdirSync(dirname).forEach(file => filename.push(join(dirname, file))))
-readdirSync("./GataJadiBot").forEach(file => {
-    console.log(file)
-    rmSync("./GataJadiBot/" + file, { recursive: true, force: true })})
-return filename.map(file => {
-const stats = statSync(file)
-if (stats.isFile() && (Date.now() - stats.mtimeMs >= 1000 * 60 * 3)) return unlinkSync(file) // 3 minutes
-return false
-})}*/
 
 async function connectionUpdate(update) {
 const { connection, lastDisconnect, isNewLogin } = update
@@ -255,9 +234,9 @@ console.log(chalk.cyanBright(`\n𓃠 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈�
 }, 180000)
 _quickTest()
 .then(() => conn.logger.info(`😸 𝘾𝘼𝙍𝙂𝘼𝙉𝘿𝙊.. : 𝘾𝙃𝘼𝙍𝙂𝙄𝙉𝙂.. \n`))
-.catch(console.error)
+.catch(console.error)*/
 
-/*process.env['NODE_TLS_REJECT_UNAUTHORIZED'] = '0'; //SI QUIERES MAS DATOS COMPLETOS EN LA CONSOLA USA ESTE CÓDIGO 
+process.env['NODE_TLS_REJECT_UNAUTHORIZED'] = '0'; //SI QUIERES MAS DATOS COMPLETOS EN LA CONSOLA USA ESTE CÓDIGO 
 import './config.js';
 import { createRequire } from "module";
 import path, { join } from 'path'
@@ -266,8 +245,7 @@ import { platform } from 'process'
 global.__filename = function filename(pathURL = import.meta.url, rmPrefix = platform !== 'win32') { return rmPrefix ? /file:\/\/\//.test(pathURL) ? fileURLToPath(pathURL) : pathURL : pathToFileURL(pathURL).toString() }; global.__dirname = function dirname(pathURL) { return path.dirname(global.__filename(pathURL, true)) }; global.__require = function require(dir = import.meta.url) { return createRequire(dir) }
 
 import * as ws from 'ws';
-import { readdirSync, statSync, unlinkSync, existsSync, readFileSync } from 'fs';
-import watch from 'glob-fs'
+import { readdirSync, statSync, unlinkSync, existsSync, readFileSync, watch } from 'fs';
 import yargs from 'yargs';
 import { spawn } from 'child_process';
 import lodash from 'lodash';
@@ -539,4 +517,4 @@ console.log(conn.logger.info(`\n𓃠 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈�
 
 _quickTest()
   .then(() => conn.logger.info('Prueba rápida realizada | Quick Test Done'))
-  .catch(console.error)*/
+  .catch(console.error)
