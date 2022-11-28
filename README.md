@@ -34,7 +34,7 @@
 </p> 
 
 [![blog](https://img.shields.io/badge/GataBot-Update-25D366?style=for-the-badge&logo=whatsapp&logoColor=white 
-)](https://chat.whatsapp.com/EzLCL8DU4NtDa1gPScN11M) <a href="https://chat.whatsapp.com/Hahc7UwSouH9jIDStkT5QW"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/WhatsApp_logo-color-vertical.svg/1200px-WhatsApp_logo-color-vertical.svg.png" height="29px">
+)](https://chat.whatsapp.com/EzLCL8DU4NtDa1gPScN11M) <a href="https://chat.whatsapp.com/EzLCL8DU4NtDa1gPScN11M"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/WhatsApp_logo-color-vertical.svg/1200px-WhatsApp_logo-color-vertical.svg.png" height="29px">
 [![Typing SVG](http://readme-typing-svg.herokuapp.com?font=Fira+Code&size=10&duration=3000&pause=1000&color=34F6F7&center=falso&vCenter=falso&width=435&lines=%C3%9Anete+y+Conoce+las+%C3%9Altimas+Novedades!!)](https://git.io/typing-svg)
 </a>
 
@@ -55,25 +55,24 @@
 * 𝗚𝗮𝘁𝗮𝗕𝗼𝘁 : 𝗕𝗼𝘅𝗠𝗶𝗻𝗲 💛
 > SI QUIERE INSTAR POR BOXMINE USE [`GataBot-MD`](https://github.com/GataNina-Li/GataBot-MD)
 -----
-### ACTIVAR POR TERMUX  <img src="https://c.tenor.com/HLrXIleGBToAAAAC/transparent-cat.gif" height="30px">
-> ESCRIBE LOS SIGUIENTES COMANDOS UNO POR UNO:
-
+### ACTIVAR POR TERMUX  <img src="https://c.tenor.com/HLrXIleGBToAAAAC/transparent-cat.gif" height="40px">  
+> DESCARGUÉ Y DESCOMPRIMA  
+### [`GataBot-MD ~ MediaFire`](https://www.mediafire.com/file/zbi0knvnssaipx1/GataBot-MD.zip/file) <a href="https://www.mediafire.com/file/zbi0knvnssaipx1/GataBot-MD.zip/file"> <img src="https://i.pinimg.com/originals/47/77/17/477717205aa460ae58f6b988a4606a02.png" height="30px">
+### ESCRIBE LOS SIGUIENTES COMANDOS UNO POR UNO:
 ```bash
 termux-setup-storage
-apt update 
-pkg upgrade 
-pkg install git -y
+apt update
+pkg upgrade
 pkg install nodejs -y
-pkg install ffmpeg -y
+pkg install ffmpeg-y
 pkg install imagemagick -y
-pkg install yarn
-git clone https://github.com/GataNina-Li/GataBotMD-Termux
-cd GataBotMD-Termux
-yarn install 
+cd storage/downloads/GataBot-MD 
 npm install
-npm update
 npm start
 ```
+* #### APLICACIÓN RECOMENDADA PARA [`DESCOMPRIMIR`](https://play.google.com/store/apps/details?id=com.rarlab.rar)
+* #### APLICACIÓN RECOMENDADA PARA EDITAR [`NÚMERO DE OWNER`](https://play.google.com/store/apps/details?id=com.rhmsoft.code)
+> ASEGÚRESEDE GUARDAR LOS ARCHIVOS EN ESTA UBICACIÓN: storage/downloads/GataBot-MD    
 ----
 ## 💻 PARA USUARIOS DE WINDOWS/VPS/RDP (Opcional)
 
@@ -84,8 +83,8 @@ npm start
 * Descargar e instala Yarn [`Aquí`](https://classic.yarnpkg.com/en/docs/install#windows-stable)
 
 ```bash
-git clone https://github.com/GataNina-Li/GataBotMD-Termux
-cd GataBotMD-Termux
+git clone https://github.com/GataNina-Li/GataBotMD
+cd GataBotMD
 npm install
 npm update
 node .
